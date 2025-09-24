@@ -38,3 +38,11 @@ mongoose.connect(process.env.MONGO_URI)
     console.error('❌ MongoDB connect error:', err.message);
     process.exit(1);
   });
+
+app.get('/', (req, res) => {
+  res.send('Hello world from Render');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
