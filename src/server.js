@@ -40,7 +40,7 @@ mongoose.connect(process.env.MONGO_URI)
   });
 
 app.get('/', (req, res) => {
-  res.send('Hello world from Render');
+  res.send('Hello world!');
 });
 
 app.listen(PORT, () => {
